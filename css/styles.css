@@ -1,0 +1,350 @@
+:root {
+    --brand-color-blue-light-hover: #188CE8;
+    --brand-color-blue-light: #2196F3;
+    --brand-color-blue: #3f51b5;    
+    --brand-color-black: #000000;
+    --brand-color-black-light: #212121;
+    --brand-color-black-dark: #2F303A;
+    --brand-color-gray: #757575;
+    --brand-color-gray-light: #F5F4FA;
+    --brand-color-gray-border: #EEEEEE;
+    --brand-color-white: #FFFFFF;
+    --brand-color-heder-line: #ECECEC;
+    --brand-color-address:rgba(255, 255, 255, 0.6);
+    --card-set-portfolio: 30px
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+}
+ul {
+    padding: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.list {
+    list-style: none;    
+}
+.link {
+    text-decoration: none;    
+    line-height: 1.17;
+}
+.page {    
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    background-color: var(--brand-color-white);        
+    color: var(--brand-color-black-light);   
+}
+
+.page-header .container{
+    display: flex;    
+    padding-top: 25px;
+    padding-bottom: 24px;
+    align-items: center;
+}
+
+/* Рамка хедера */
+.page-header {    
+    border-bottom: 1px solid var(--brand-color-heder-line);
+}
+
+/* Подсветка */
+.site-nav .link:hover, .site-nav .link:focus, .site-nav .link.current {
+    color: var(--brand-color-blue-light);
+}
+.site-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;     
+}
+
+.site-nav-element + .site-nav-element {
+    margin-left: 50px;
+}
+
+.navigation {
+    display: flex;
+}
+.site-nav .link {    
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-black-light);
+}
+/* Хедер почта телефон */
+.auth-nav {
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+}
+
+.auth-nav-element + .auth-nav-element {
+ margin-left: 50px;
+}
+
+.auth-nav .link {    
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-gray);
+}
+.auth-nav .link:hover, .auth-nav .link:focus {
+    color: var(--brand-color-blue-light);
+}
+/* Логотип */
+.logo {
+    margin-right: 93px;    
+    font-size: 26px;
+    color: var(--brand-color-black);    
+    font-family: 'Raleway', sans-serif;        
+}
+.logo span{
+    color: var(--brand-color-blue-light);
+}
+/* Герой */
+.hero .button {
+    display: inline-block;
+    padding: 10px 32px;
+    margin: 0;
+    min-width: 200px;
+    color: var(--brand-color-white);
+    background: var(--brand-color-blue-light);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    line-height: 1.88;
+}
+.hero .button:hover{
+    background-color: var(--brand-color-blue-light-hover);
+}
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: var(--brand-color-black-dark);
+    text-align: center;    
+}
+.hero-title {    
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;    
+    font-size: 44px;
+    font-weight: 900;    
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--brand-color-white);    
+}
+/* Наша команда */
+.personal { 
+    background: var(--brand-color-gray-light);
+}
+.personal-card-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.personal-title {    
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;    
+    line-height: 1.17;
+    text-align: center;    
+}
+.personal-text {    
+    line-height: 1.17;
+    text-align: center;    
+    color: var(--brand-color-gray);
+}
+.personal-card-set {    
+    display: flex;   
+    list-style: none;
+}
+.personal-card-item {
+     
+    background-color: var(--brand-color-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.personal-card-item + .personal-card-item {
+    margin-left: 30px;
+}
+
+/* Секция картинок */
+.section-title {   
+    margin-bottom: 50px;    
+    font-size: 36px;    
+    line-height: 1.17;
+    text-align: center;    
+}
+/* Секция коротких текстов */
+.works-list {    
+    display: flex;    
+}
+.works + .works {    
+    margin-left: 30px;
+}
+
+.works-title {
+    margin-bottom: 10px;   
+    font-size: 14px;    
+    line-height: 1.17;    
+    text-transform: uppercase;
+}
+.works-text {        
+    width: 270px; 
+    font-size: 14px;    
+    line-height: 1.714;    
+    color: var(--brand-color-gray);       
+}
+/* Футер */
+.logo-footer {
+    margin-bottom: 20px;
+    display: block;
+    color: var(--brand-color-white);    
+}
+.footer {
+    padding: 60px 0;
+    background: var(--brand-color-black-dark);    
+}
+.address,
+.address .link {    
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--brand-color-white);
+    font-style: normal;
+}
+.one {
+margin-bottom: 5px;
+}
+
+.address .link {    
+    display: block;
+    color: var(--brand-color-address);
+}
+.address .link:first-child {
+margin-bottom: 5px;
+}
+.address .link:hover,
+.address .link:focus {
+    color: var(--brand-color-blue-light);
+}
+/* Портфолио фильтры*/
+.button {
+    padding: 6px 22px;  
+    margin: 0px 4px;   
+    color: var(--brand-color-black-light);
+    background: var(--brand-color-gray-light);
+    cursor: pointer;
+    border: 0;    
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;    
+    letter-spacing: inherit;    
+    border-radius: 4px;    
+}
+.buttons {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;    
+}
+.button:hover, .button:focus {
+    color: var(--brand-color-white);
+    background: var(--brand-color-blue-light);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/* Портфолио карточки */
+.portfolio-card-set {
+    margin-top: calc(-1 * var(--card-set-portfolio));
+    margin-left: calc(-1 * var(--card-set-portfolio));
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-card-item {
+    margin-top: var(--card-set-portfolio);
+    margin-left: var(--card-set-portfolio);
+    flex-basis: calc(100% / 3 - var(--card-set-portfolio));
+}
+
+.portfolio-card-content {
+    padding: 20px 24px 19px 24px;
+    border: 1px solid var(--brand-color-gray-border);
+    border-top: none;
+}
+
+.portfolio-card-title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-card-text {
+    line-height: 1.88;
+    color: var(--brand-color-gray);
+}
+/* Вариант №2 */
+/* 
+.portfolio-card-set {
+    margin-top: calc(-1 * var(--card-set-portfolio));
+    margin-left: calc(-1 * var(--card-set-portfolio));
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-card-item {
+    margin-right: 20px;
+    margin-bottom: 30px;
+    width: 370px;
+    background-color: tomato;
+    outline: solid black;
+    margin-top: var(--card-set-portfolio);
+    margin-left: var(--card-set-portfolio);
+    flex-basis: calc(100% / 3 - var(--card-set-portfolio));
+}
+.portfolio-card-item + .portfolio-card-item {
+    margin-right: 30px;
+}
+ .portfolio-card-item:nth-child(3n + 3) {
+    margin-left: 0;    
+    outline:  solid black;
+} 
+
+.portfolio-card-content {
+    padding: 20px 24px 19px 24px;
+    border: 1px solid var(--brand-color-gray-border);
+    border-top: none;
+}
+.portfolio-card-title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.portfolio-card-text {
+    line-height: 1.88;
+    color: var(--brand-color-gray);
+} */
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;    
+    /* outline: solid tomato; */
+}
+.section {
+    padding: 94px 0;    
+}
+.no-padding-top  {
+    padding-top: 0;
+}
+.photo-set {    
+    list-style: none;
+    display: flex;    
+}
+.photo + .photo {
+    margin-left: 30px;
+}
