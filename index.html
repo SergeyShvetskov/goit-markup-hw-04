@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="page">
+  <body class="body-page">
     <header class="page-header">
       <!--Логотип и навигация-->
       <div class="container">
@@ -35,12 +35,19 @@
 
         <ul class="auth-nav">
           <li class="auth-nav-element">
-            <a class="auth-nav-mail link" href="mailto:info@devstudio.com">
-              <img src="./images/mail.svg" alt="" /> info@devstudio.com</a
+            <a class="auth-nav-mail link" href="mailto:info@devstudio.com"
+              ><svg class="auth-nav-mail-svg">
+                <use href="./images/symbol-defs.svg#icon-mail"></use></svg
+              >info@devstudio.com</a
             >
           </li>
           <li class="auth-nav-element">
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="auth-nav-phone link" href="tel:+380961111111"
+              ><svg class="auth-nav-phone-svg">
+                <use href="./images/symbol-defs.svg#icon-tel"></use>
+                ></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -122,6 +129,12 @@
                 <div class="personal-card-footer">
                   <h3 class="personal-title">Игорь Демьяненко</h3>
                   <p class="personal-text">Product Designer</p>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
                 </div>
               </article>
             </li>
@@ -160,6 +173,62 @@
                   <p class="personal-text">UI Designer</p>
                 </div>
               </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Постоянные клиенты</h2>
+          <ul class="regular-customers-set">
+            <li class="regular-customers-item">
+              <a class="link" href="">
+                <div class="regular-customers-item-frame">
+                  <svg class="regular-customers-icon">
+                    <use href="./images/symbol-defs.svg#icon-regular-customers-1"></use>
+                  </svg></div
+              ></a>
+            </li>
+            <li class="regular-customers-item">
+              <button class="regular-customers-button">
+                <!-- <div class="regular-customers-item-frame"> -->
+                <svg class="regular-customers-icon">
+                  <use href="./images/symbol-defs.svg#icon-regular-customers-2"></use>
+                </svg>
+                <!-- </div> -->
+              </button>
+            </li>
+            <li class="regular-customers-item">
+              <a href="">
+                <div class="regular-customers-item-frame">
+                  <svg class="regular-customers-icon">
+                    <use href="./images/symbol-defs.svg#icon-regular-customers-3"></use>
+                  </svg></div
+              ></a>
+            </li>
+            <li class="regular-customers-item">
+              <a href="">
+                <div class="regular-customers-item-frame">
+                  <svg class="regular-customers-icon">
+                    <use href="./images/symbol-defs.svg#icon-regular-customers-4"></use>
+                  </svg></div
+              ></a>
+            </li>
+            <li class="regular-customers-item">
+              <a href="">
+                <div class="regular-customers-item-frame">
+                  <svg class="regular-customers-icon">
+                    <use href="./images/symbol-defs.svg#icon-regular-customers-5"></use>
+                  </svg></div
+              ></a>
+            </li>
+            <li class="regular-customers-item">
+              <a href="">
+                <div class="regular-customers-item-frame">
+                  <svg class="regular-customers-icon">
+                    <use href="./images/symbol-defs.svg#icon-regular-customers-6"></use>
+                  </svg></div
+              ></a>
             </li>
           </ul>
         </div>
