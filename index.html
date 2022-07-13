@@ -53,38 +53,61 @@
     </header>
     <!--Герой-->
     <main>
-      <section class="hero">
-        <div class="container">
-          <h1 class="hero-title">
-            Эффективные решения <br />
-            для вашего бизнеса
-          </h1>
-          <button class="button" type="button">Заказать услугу</button>
-        </div>
-      </section>
+      <div class="overlay">
+        <section class="hero">
+          <div class="container">
+            <h1 class="hero-title">
+              Эффективные решения <br />
+              для вашего бизнеса
+            </h1>
+            <button class="button" type="button">Заказать услугу</button>
+          </div>
+        </section>
+      </div>
       <!--Статьи-->
       <section class="section">
         <div class="container">
           <ul class="works-list list">
             <li class="works">
+              <div class="works-thumb">
+                <svg class="works-svg">
+                  <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                </svg>
+              </div>
+
               <h3 class="works-title">Внимание к деталям</h3>
               <p class="works-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
             <li class="works">
+              <div class="works-thumb">
+                <svg class="works-svg">
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="works-title">Пунктуальность</h3>
               <p class="works-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
             <li class="works">
+              <div class="works-thumb">
+                <svg class="works-svg">
+                  <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="works-title">Планирование</h3>
               <p class="works-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
             <li class="works">
+              <div class="works-thumb">
+                <svg class="works-svg">
+                  <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="works-title">Современные технологии</h3>
               <p class="works-text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -342,14 +365,49 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <!--Логотип-->
-        <a class="logo logo-footer link" href="./index.html"><span>Web</span>Studio</a>
-        <!--Контакты-->
-        <address class="address one">г. Киев, пр-т Леси Украинки, 26</address>
-        <address class="address">
-          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+        <div>
+          <!--Логотип-->
+          <a class="logo logo-footer link" href="./index.html"><span>Web</span>Studio</a>
+          <!--Контакты-->
+          <address class="address one">г. Киев, пр-т Леси Украинки, 26</address>
+          <address class="address">
+            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </address>
+        </div>
+        <div class="social-set">
+          <h3 class="social-title">Присоединяйтесь</h3>
+          <ul class="personal-card-icon-set list">
+            <li class="personal-card-icon-item">
+              <button class="footer-icon-button">
+                <svg class="footer-icon personal-card-icon">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="personal-card-icon-item">
+              <button class="footer-icon-button">
+                <svg class="personal-card-icon">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="personal-card-icon-item">
+              <button class="footer-icon-button">
+                <svg class="personal-card-icon">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="personal-card-icon-item">
+              <button class="footer-icon-button">
+                <svg class="personal-card-icon">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
