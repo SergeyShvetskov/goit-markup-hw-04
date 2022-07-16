@@ -211,6 +211,7 @@ img {
     padding: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
     color: var(--brand-color-gray-icon);
     background: none;    
@@ -226,8 +227,6 @@ img {
     margin-left: 10px;
 }
 .personal-card-icon {
-    margin-left: auto;
-    margin-right: auto;
     fill: currentColor;  
     width: 20px;
     height: 20px;
@@ -246,19 +245,22 @@ img {
 .works + .works {    
     margin-left: 30px;
 }
-.works-svg { 
-    width: 70px;
-    height: 70px;
-}
+
 .works-thumb {
-    padding: 25px 100px;
-    align-items: center;
     margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     width: 270px;
     height: 120px;
     background: var(--brand-color-gray-light);
     border-radius: 4px;
 }
+.works-svg {    
+    width: 70px;
+    height: 70px;    
+}
+
 .works-title {
     margin-bottom: 10px;   
     font-size: 14px;    
@@ -294,11 +296,14 @@ img {
 }
 
 .regular-customers-button {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;    
     width: 170px;
     height: 92px;
     color: var(--brand-color-gray-icon);
-    cursor: pointer;
-    padding: 13px 31px;
+    cursor: pointer;    
     border: 1px solid var(--brand-color-gray-icon);
     border-radius: 4px;
     background-color: var(--brand-color-white);
@@ -363,7 +368,8 @@ margin-bottom: 5px;
     height: 44px;
     padding: 0;
     display: flex;
-    align-items: center;
+    align-items: center; 
+    justify-content: center;   
     cursor: pointer;
     color: var(--brand-color-white);
     background: rgba(255, 255, 255, 0.1);
@@ -443,53 +449,10 @@ margin-bottom: 5px;
     line-height: 1.88;
     color: var(--brand-color-gray);
 }
-/* Вариант №2 */
-/* 
-.portfolio-card-set {
-    margin-top: calc(-1 * var(--card-set-portfolio));
-    margin-left: calc(-1 * var(--card-set-portfolio));
-    display: flex;
-    flex-wrap: wrap;
-}
-.portfolio-card-item {
-    margin-right: 20px;
-    margin-bottom: 30px;
-    width: 370px;
-    background-color: tomato;
-    outline: solid black;
-    margin-top: var(--card-set-portfolio);
-    margin-left: var(--card-set-portfolio);
-    flex-basis: calc(100% / 3 - var(--card-set-portfolio));
-}
-.portfolio-card-item + .portfolio-card-item {
-    margin-right: 30px;
-}
- .portfolio-card-item:nth-child(3n + 3) {
-    margin-left: 0;    
-    outline:  solid black;
-} 
-
-.portfolio-card-content {
-    padding: 20px 24px 19px 24px;
-    border: 1px solid var(--brand-color-gray-border);
-    border-top: none;
-}
-.portfolio-card-title {
-    margin-bottom: 4px;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-.portfolio-card-text {
-    line-height: 1.88;
-    color: var(--brand-color-gray);
-} */
-
 
 .container {
     margin-left: auto;
     margin-right: auto;
-
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;    
